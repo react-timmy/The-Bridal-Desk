@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta -->
+    <meta
+      name="description"
+      content="The Bridal Desk provides bridal coordination and wedding-day operations for Nigerian brides. Day-of coordination, full planning, vendor management, and emergency support in Lagos and Southwest Nigeria."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://thebridaldesk.com/" />
+
+    <!-- Open Graph / social share -->
+    <meta property="og:type"         content="website" />
+    <meta property="og:url"          content="https://thebridaldesk.com/" />
+    <meta property="og:title"        content="The Bridal Desk | Bridal Operations For Stress-Free Weddings" />
+    <meta property="og:description"  content="Calm, coordinated, stress-free weddings for Nigerian brides. Professional day-of coordination, full planning, and vendor management by The Bridal Desk." />
+    <meta property="og:image"        content="https://thebridaldesk.com/social-share.jpg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale"       content="en_NG" />
+    <meta property="og:site_name"    content="The Bridal Desk" />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="The Bridal Desk | Bridal Operations For Stress-Free Weddings" />
+    <meta name="twitter:description" content="Calm, coordinated, stress-free weddings for Nigerian brides. Professional day-of coordination, full planning, and vendor management." />
+    <meta name="twitter:image"       content="https://thebridaldesk.com/social-share.jpg" />
+
+    <title>The Bridal Desk | Bridal Operations For Stress-Free Weddings</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Structured data: Local Business + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://thebridaldesk.com/#business",
+          "name": "The Bridal Desk",
+          "description": "Bridal coordination and wedding-day operations for Nigerian brides. Calm, stress-free weddings through professional planning, vendor management, and day-of coordination.",
+          "url": "https://thebridaldesk.com/",
+          "logo": "https://thebridaldesk.com/favicon.svg",
+          "image": "https://thebridaldesk.com/social-share.jpg",
+          "founder": {
+            "@type": "Person",
+            "name": "Desire Cole"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Lagos" },
+            { "@type": "State", "name": "Southwest Nigeria" }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lagos",
+            "addressCountry": "NG"
+          },
+          "priceRange": "Contact for pricing",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Wedding Coordination Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Day-of Wedding Coordination" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Wedding Planning" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bridal Concierge" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vendor Coordination" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Wedding Support" } }
+            ]
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://thebridaldesk.com/#website",
+          "url": "https://thebridaldesk.com/",
+          "name": "The Bridal Desk",
+          "description": "Bridal operations for stress-free Nigerian weddings",
+          "publisher": { "@id": "https://thebridaldesk.com/#business" }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Full-page scroll animation background -->
+    <div class="animation-background" role="presentation" aria-hidden="true">
+      <canvas id="frame-canvas"></canvas>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="The Bridal Desk home">
+        <span class="brand-mark" aria-hidden="true">BD</span>
+        <span>The Bridal Desk</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <!-- Animated menu / close icon -->
+        <svg class="nav-icon-menu" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <line x1="2" y1="5"  x2="18" y2="5"  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="2" y1="15" x2="18" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <svg class="nav-icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Main navigation">
+        <a href="#command-center">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.5" y="1.5" width="15" height="15" rx="3" stroke="currentColor" stroke-width="1.3"/><path d="M5 9h8M5 6h4M5 12h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Command Center
+        </a>
+        <a href="#services">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 2L11.2 6.6L16.5 7.4L12.75 11.1L13.7 16.5L9 14.1L4.3 16.5L5.25 11.1L1.5 7.4L6.8 6.6L9 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          Services
+        </a>
+        <a href="#bridal-room">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 2C6.24 2 4 4.24 4 7c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5Z" stroke="currentColor" stroke-width="1.3"/><circle cx="9" cy="7" r="1.8" stroke="currentColor" stroke-width="1.3"/></svg>
+          The Bridal Room
+        </a>
+        <a href="#partners">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="6" cy="7" r="2.5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="7" r="2.5" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 15.5c0-2.5 2-4 4.5-4M16.5 15.5c0-2.5-2-4-4.5-4M9 15.5c0-2.2-1.6-4-3.5-4h-1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Partners
+        </a>
+        <a href="#about">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="6.5" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2.5 16c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          About
+        </a>
+        <a href="#inquiry" class="nav-cta">
+          <svg class="nav-link-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.5" y="3.5" width="15" height="11" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 6.5l7.5 5 7.5-5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Book Consultation
+        </a>
+      </nav>
+    </header>
+
+    <!-- Mobile sticky CTA — only visible on small screens after hero -->
+    <div class="mobile-cta-bar" id="mobile-cta-bar">
+      <a href="#inquiry" class="button primary mobile-cta-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="margin-right:8px;flex-shrink:0"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M1 5l6 4 6-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Start Here — Book a Consultation
+      </a>
+    </div>
+
+    <main id="top" class="content-overlay">
+
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-heading">
+
+        <div class="hero-centre" data-animate>
+          <p class="eyebrow">For Nigerian brides planning real weddings</p>
+          <h1 id="hero-heading">Your wedding,<br>expertly run.</h1>
+          <p class="hero-text">
+            Vendors, timelines, family, makeup, transport, payments, and emergencies
+            should not be on your head. The Bridal Desk gives your wedding a calm
+            command center so you can be the bride.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#inquiry">Book a Consultation</a>
+            <a class="button secondary" href="#command-center">Explore Command Center</a>
+          </div>
+        </div>
+
+        <!-- Bottom-left floating card -->
+        <div class="hero-card hero-card--left" data-animate>
+          <span class="hero-card-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L9 4M9 14v2.5M1.5 9H4M14 9h2.5M3.7 3.7l1.77 1.77M12.53 12.53l1.77 1.77M3.7 14.3l1.77-1.77M12.53 5.47l1.77-1.77" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+          <h2 class="hero-card-heading">Calm from the start</h2>
+          <p>Personal, founder-led coordination. Every moving part managed before and during your day.</p>
+        </div>
+
+        <!-- Bottom-right floating card -->
+        <div class="hero-card hero-card--right" data-animate>
+          <span class="hero-card-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5L7 13.5L15 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="9" r="7.5" stroke="currentColor" stroke-width="1.3"/></svg>
+          </span>
+          <h2 class="hero-card-heading">Nothing left to chance</h2>
+          <p>Vendors confirmed, timeline locked, bridesmaids briefed. You focus on the moment.</p>
+        </div>
+
+      </section>
+
+      <!-- Services Section — moved directly after hero -->
+      <section class="section-shell services" id="services" aria-labelledby="services-heading">
+        <div class="section-heading align-left" data-animate>
+          <p class="eyebrow">What we coordinate</p>
+          <h2 id="services-heading">Service rails built for the way weddings actually move.</h2>
+          <p>Every wedding is different. We begin with a consultation to understand your date, location, guest count, vendors, and support needs.</p>
+        </div>
+
+        <!-- Bride testimonial cards -->
+        <div class="svc-testimonial-stack" data-animate data-animate-stagger>
+
+          <article class="svc-tcard">
+            <div class="svc-tcard-portrait">
+              <img
+                src="reference images/Bride of the Season.jpeg"
+                alt="Bride of the Season — a Nigerian bride in stunning wedding attire"
+                loading="lazy"
+              />
+            </div>
+            <div class="svc-tcard-panel">
+              <blockquote class="svc-tcard-quote">
+                "I had vendors, family drama, and a florist who went quiet two days before. The Bridal Desk handled everything. On the day I just walked in as the bride."
+              </blockquote>
+              <div class="svc-tcard-stats" aria-label="Service highlights">
+                <div class="svc-stat">
+                  <span class="svc-stat-value">Day-of</span>
+                  <span class="svc-stat-label">Coordination</span>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-value">6</span>
+                  <span class="svc-stat-label">Vendors managed</span>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-value">Zero</span>
+                  <span class="svc-stat-label">Stress on the day</span>
+                </div>
+              </div>
+              <footer class="svc-tcard-attribution">
+                <span class="svc-tcard-name">Lagos White Wedding</span>
+                <span class="svc-tcard-role">350 guests</span>
+              </footer>
+            </div>
+          </article>
+
+          <article class="svc-tcard svc-tcard--alt">
+            <div class="svc-tcard-portrait">
+              <img
+                src="reference images/Omorrr :).jpeg"
+                alt="Bride in elegant traditional Nigerian wedding attire, smiling"
+                loading="lazy"
+              />
+            </div>
+            <div class="svc-tcard-panel">
+              <blockquote class="svc-tcard-quote">
+                "The bridesmaids were scattered, my makeup artist was late, and I had a family situation. The desk absorbed all of it. Nobody even knew anything went wrong."
+              </blockquote>
+              <div class="svc-tcard-stats" aria-label="Service highlights">
+                <div class="svc-stat">
+                  <span class="svc-stat-value">Full</span>
+                  <span class="svc-stat-label">Bridal Concierge</span>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-value">Multi-day</span>
+                  <span class="svc-stat-label">Wedding</span>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-value">100%</span>
+                  <span class="svc-stat-label">Calm delivery</span>
+                </div>
+              </div>
+              <footer class="svc-tcard-attribution">
+                <span class="svc-tcard-name">Ibadan Traditional + White</span>
+                <span class="svc-tcard-role">500 guests</span>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Service pillars grid (below the testimonials) -->
+        <div class="services-grid" data-animate data-animate-stagger>
+          <article class="svc-card svc-featured">
+            <span class="svc-num" aria-hidden="true">01</span>
+            <h3>Day-of Coordination</h3>
+            <p>For brides who have planned the wedding but need professional execution when it matters most.</p>
+            <span class="svc-tag">Most popular</span>
+          </article>
+          <article class="svc-card svc-standard">
+            <span class="svc-num" aria-hidden="true">02</span>
+            <h3>Full Wedding Planning</h3>
+            <p>Planning support from concept to final-day delivery, including vendors, timelines, and priorities.</p>
+          </article>
+          <article class="svc-card svc-standard">
+            <span class="svc-num" aria-hidden="true">03</span>
+            <h3>Bridal Concierge</h3>
+            <p>Personal support throughout the wedding journey so the bride is not carrying every detail alone.</p>
+          </article>
+          <article class="svc-card svc-accent">
+            <span class="svc-num" aria-hidden="true">04</span>
+            <h3>Vendor Coordination</h3>
+            <p>Communication, reminders, expectations, handoffs, and wedding-day alignment across vendor teams.</p>
+          </article>
+          <article class="svc-card svc-accent">
+            <span class="svc-num" aria-hidden="true">05</span>
+            <h3>Emergency Support</h3>
+            <p>Issue handling, preparedness, backup planning, and practical wedding-day support.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section class="chaos" aria-labelledby="chaos-heading">
+        <div class="section-shell split">
+          <div data-animate>
+            <p class="eyebrow">You deserve better</p>
+            <h2 id="chaos-heading">Your only job on your wedding day is to be the bride.</h2>
+            <p style="color:rgba(255,248,239,.80);margin-top:14px;font-size:clamp(.97rem,1.3vw,1.08rem);line-height:1.72;">We take every moving part off your plate: vendors, timelines, family, transport, payments, and the unexpected, so you stay present for every moment that matters.</p>
+          </div>
+          <div class="chaos-grid" data-animate data-animate-stagger aria-label="Wedding day responsibilities we manage">
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 2C5.8 2 4 3.8 4 6c0 2.5 2.5 5.5 3.6 6.8.2.3.6.3.8 0C9.5 11.5 12 8.5 12 6c0-2.2-1.8-4-4-4Z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Makeup
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 13c0-4 1.5-6 4-6s4 2 4 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M5 7C5 5 6.3 3.5 8 3.5S11 5 11 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Hair
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Photography
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11V6a1 1 0 011-1h8a1 1 0 011 1v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M1.5 11h13M5.5 11V8.5M10.5 11V8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Catering
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 2l1.5 3.5H13l-2.75 2 1 3.5L8 9l-3.25 2 1-3.5L3 5.5h3.5L8 2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              Decor
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 3h6M4 3c0 3 2 5 4 5s4-2 4-5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M8 8v5M5 13h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Dress changes
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.5" y="5" width="13" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M4 5V4a1 1 0 011-1h6a1 1 0 011 1v1" stroke="currentColor" stroke-width="1.2"/><circle cx="5" cy="9.5" r="1" fill="currentColor"/><circle cx="11" cy="9.5" r="1" fill="currentColor"/></svg>
+              Transport
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="5.5" cy="5.5" r="2.5" stroke="currentColor" stroke-width="1.2"/><circle cx="10.5" cy="5.5" r="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M1 13c0-2.5 2-4 4.5-4M15 13c0-2.5-2-4-4.5-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Bridesmaids
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 2C5.2 2 3 4.2 3 7s5 9 5 9 5-6.2 5-9S10.8 2 8 2Z" stroke="currentColor" stroke-width="1.2"/></svg>
+              Family
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5 4V3a1 1 0 011-1h4a1 1 0 011 1v1M8 8.5v-1M8 9.5v.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Payments
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M8 5v3.5l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Timeline
+            </span>
+            <span>
+              <svg class="chaos-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 2v2M8 12v2M2 8h2M12 8h2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="8" cy="8" r="3.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Emergencies
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bridal Command Center -->
+      <section class="section-shell command" id="command-center" aria-labelledby="command-heading">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Signature system</p>
+          <h2 id="command-heading">The Bridal Command Center</h2>
+          <p>
+            A calm operational layer for Nigerian weddings: people, vendors, timing, issues, and bride
+            support held together by one accountable desk.
+          </p>
+        </div>
+
+        <div class="command-layout" data-animate data-animate-stagger>
+
+          <article class="command-panel cp-timeline">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80&auto=format&fit=crop"
+                alt="Wedding timeline planning with flowers and stationery on a table"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">01</span>
+              <h3>Timeline Desk</h3>
+              <p>Wedding morning flow, vendor arrival windows, ceremony cues, reception timing, and dress changes.</p>
+            </div>
+          </article>
+
+          <article class="command-panel cp-vendor">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80&auto=format&fit=crop"
+                alt="Wedding vendor meeting and coordination in a bright venue"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">02</span>
+              <h3>Vendor Desk</h3>
+              <p>Contact tracking, arrival confirmation, setup monitoring, and fast escalation when something shifts.</p>
+            </div>
+          </article>
+
+          <article class="command-panel cp-concierge">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&q=80&auto=format&fit=crop"
+                alt="Bride getting personal concierge support and attention on her wedding morning"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">03</span>
+              <h3>Bride Concierge</h3>
+              <p>Personal reminders, calm communication, comfort checks, and protected focus for the bride.</p>
+            </div>
+          </article>
+
+          <article class="command-panel cp-people">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80&auto=format&fit=crop"
+                alt="Bridesmaids and family members coordinated together at a Nigerian wedding"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">04</span>
+              <h3>People Desk</h3>
+              <p>Bridesmaids, family members, processional flow, and key contact coordination throughout the day.</p>
+            </div>
+          </article>
+
+          <article class="command-panel cp-emergency">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800&q=80&auto=format&fit=crop"
+                alt="Emergency preparedness kit laid out for wedding day support"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">05</span>
+              <h3>Emergency Desk</h3>
+              <p>Prepared kits, backup contacts, problem triage, and practical support when the day gets unpredictable.</p>
+            </div>
+          </article>
+
+          <article class="command-panel cp-partner">
+            <div class="cp-img">
+              <img
+                src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80&auto=format&fit=crop"
+                alt="Wedding brand partnership and sponsor coordination setup"
+                loading="lazy"
+                width="800"
+                height="533"
+              />
+            </div>
+            <div class="cp-body">
+              <span class="num">06</span>
+              <h3>Partner Desk</h3>
+              <p>Sponsor collaboration, vendor relationships, bridal gift boxes, and brand placement coordination.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="how" aria-labelledby="how-heading">
+        <div class="section-shell">
+          <div class="section-heading" data-animate>
+            <p class="eyebrow">How it works</p>
+            <h2 id="how-heading">From consultation to controlled execution.</h2>
+          </div>
+          <div class="steps" data-animate data-animate-stagger>
+            <article class="step-has-img">
+              <div class="step-img" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=800&q=80&auto=format&fit=crop"
+                  alt="Two women having a relaxed phone consultation over coffee"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </div>
+              <div class="step-body">
+                <strong aria-hidden="true">01</strong>
+                <div class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 2C7.1 2 4 5.1 4 9c0 4.4 5.6 9.9 6.4 10.7.3.3.9.3 1.2 0C12.4 18.9 18 13.4 18 9c0-3.9-3.1-7-7-7Z" stroke="currentColor" stroke-width="1.4"/><circle cx="11" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4"/></svg>
+                </div>
+                <h3>Discovery call</h3>
+                <p>We learn your wedding date, location, guest count, event type, vendors, and biggest stress points.</p>
+              </div>
+            </article>
+            <article class="step-has-img">
+              <div class="step-img" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1484156818044-c040038b0719?w=800&q=80&auto=format&fit=crop"
+                  alt="Wedding planning notes and timeline spread out on a table"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </div>
+              <div class="step-body">
+                <strong aria-hidden="true">02</strong>
+                <div class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M7 11h8M7 7.5h5M7 14.5h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Operations map</h3>
+                <p>We structure your timeline, people list, vendor flow, emergency plan, and coordination priorities.</p>
+              </div>
+            </article>
+            <article class="step-has-img">
+              <div class="step-img" aria-hidden="true">
+                <img
+                  src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&auto=format&fit=crop"
+                  alt="Wedding ceremony aisle with guests and floral arrangements"
+                  loading="lazy"
+                  width="800" height="600"
+                />
+              </div>
+              <div class="step-body">
+                <strong aria-hidden="true">03</strong>
+                <div class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.4"/><path d="M11 7v4.5l3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Wedding-day desk</h3>
+                <p>The Bridal Desk tracks the moving parts so you are not managing the event from the makeup chair.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Bridal Room -->
+      <section class="section-shell bridal-room" id="bridal-room" aria-labelledby="bridal-room-heading">
+        <div class="event-poster" data-animate>
+          <!-- Autoplaying 9:16 bride video background -->
+          <video
+            class="event-poster-video"
+            src="reference images/VideoShoot :).mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-hidden="true"
+          ></video>
+          <div class="event-poster-content">
+            <p class="eyebrow">Launch experience</p>
+            <h2 id="bridal-room-heading">The Bridal Room</h2>
+            <p>
+              A bridal preparation masterclass for brides who want practical guidance before the big day:
+              budgeting, vendor selection, morning timelines, food safety, emergency planning, and mental preparation.
+            </p>
+          </div>
+        </div>
+        <div class="topic-stack" data-animate data-animate-stagger aria-label="Masterclass topics covered">
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="3" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M6 7h6M6 10h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            Wedding Budgeting
+          </span>
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 2l2 4.5H16l-4 3 1.5 5L9 12l-4.5 2.5L6 9.5l-4-3h5L9 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            Vendor Selection
+          </span>
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.3"/><path d="M9 5.5V9l2.5 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Morning Timeline
+          </span>
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 2L3 6v6c0 2.2 2.4 4 6 4s6-1.8 6-4V6L9 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6.5 9.5l2 2 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Emergency Kit
+          </span>
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7V5a4 4 0 018 0v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><rect x="2.5" y="7" width="13" height="9" rx="2" stroke="currentColor" stroke-width="1.3"/><circle cx="9" cy="11.5" r="1.5" stroke="currentColor" stroke-width="1.3"/></svg>
+            Food Safety
+          </span>
+          <span>
+            <svg class="topic-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 2C6.2 2 4 4.2 4 7c0 3.8 5 9 5 9s5-5.2 5-9c0-2.8-2.2-5-5-5Z" stroke="currentColor" stroke-width="1.3"/><path d="M9 6v2.5l1.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Mental Preparation
+          </span>
+        </div>
+      </section>
+
+      <!-- Partner Opportunities -->
+      <section class="partners" id="partners" aria-labelledby="partners-heading">
+        <div class="section-shell split">
+          <div data-animate>
+            <p class="eyebrow">Founding partners</p>
+            <h2 id="partners-heading">Brands do not sponsor ideas. They sponsor access to brides.</h2>
+            <p>
+              The Bridal Desk separates sponsorships, partnerships, and vendor relationships so each collaboration is clear, credible, and commercially useful.
+            </p>
+          </div>
+          <div class="partner-types" data-animate data-animate-stagger>
+            <article>
+              <div class="partner-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 2l2.5 6.5H20l-5.5 4 2 6.5L11 15.5 5.5 19l2-6.5L2 8.5h6.5L11 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Sponsorship</h3>
+              <p>Cash, product, service, or media support in exchange for visibility and brand benefit.</p>
+            </article>
+            <article>
+              <div class="partner-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 11c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M3 7c0-1.1.9-2 2-2h12a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7Z" stroke="currentColor" stroke-width="1.4"/></svg>
+              </div>
+              <h3>Partnership</h3>
+              <p>A collaboration where both brands gain audience, credibility, or operating value.</p>
+            </article>
+            <article>
+              <div class="partner-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="14" cy="8" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M2 19c0-3 2.5-5 6-5M20 19c0-3-2.5-5-6-5M11 14c0-2.5-1.8-4.5-3-4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Vendor Relationship</h3>
+              <p>A trusted wedding business The Bridal Desk can recommend or coordinate with.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section-shell about" id="about" aria-labelledby="about-heading">
+        <div class="founder-card" data-animate>
+          <div class="founder-portrait">
+            <img
+              src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=600&q=85&auto=format&fit=crop&crop=faces,top"
+              alt="Bridal coordinator in elegant attire, calm and professional"
+              loading="lazy"
+              width="600"
+              height="700"
+            />
+          </div>
+          <div>
+            <p class="eyebrow">Founder and Lead Coordinator</p>
+            <h2 id="about-heading">Built by Desire Cole, designed to grow beyond one person.</h2>
+            <p>
+              The Bridal Desk is founder-led at the beginning, which keeps the experience personal and hands-on.
+              As the brand grows, trusted assistants, vendors, coordinators, and systems will make stress-free weddings repeatable.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inquiry Forms -->
+      <section class="forms section-shell" id="inquiry" aria-labelledby="inquiry-heading">
+        <div class="forms-layout">
+
+          <!-- Left: text content -->
+          <div class="forms-intro" data-animate>
+            <p class="eyebrow">Start here</p>
+            <h2 id="inquiry-heading">Tell us what your wedding needs.</h2>
+            <p class="forms-sub">Submit your details and The Bridal Desk will follow up to schedule a consultation. Every wedding is different. We start with a conversation.</p>
+
+            <ul class="forms-trust" aria-label="Why work with us">
+              <li>
+                <span class="trust-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4 7l2 2 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Personal, founder-led coordination from day one.</span>
+              </li>
+              <li>
+                <span class="trust-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4 7l2 2 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>No public pricing. Every package is built around your wedding.</span>
+              </li>
+              <li>
+                <span class="trust-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4 7l2 2 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Built for Lagos, Southwest Nigeria, and multi-day celebrations.</span>
+              </li>
+              <li>
+                <span class="trust-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M4 7l2 2 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>You stay present. We manage the moving parts.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: form panel -->
+          <div class="forms-panel" data-animate>
+            <div class="form-tabs" role="tablist" aria-label="Inquiry forms">
+              <button class="tab-button active" type="button" data-tab="bride" role="tab" aria-selected="true" aria-controls="form-bride">Bride Inquiry</button>
+              <button class="tab-button" type="button" data-tab="partner" role="tab" aria-selected="false" aria-controls="form-partner">Partner Inquiry</button>
+            </div>
+
+            <form class="inquiry-form active" id="form-bride" data-form="bride" novalidate>
+              <div class="field-grid">
+                <label>
+                  Bride's name
+                  <input type="text" name="bride-name" placeholder="Your full name" required autocomplete="name" />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" name="bride-email" placeholder="you@example.com" required autocomplete="email" />
+                </label>
+                <label>
+                  WhatsApp / phone
+                  <input type="tel" name="bride-phone" placeholder="+234..." required autocomplete="tel" />
+                </label>
+                <label>
+                  Wedding date
+                  <input type="date" name="wedding-date" required />
+                </label>
+                <label>
+                  Wedding city
+                  <input type="text" name="wedding-city" placeholder="Lagos, Ibadan, Abuja..." required />
+                </label>
+                <label>
+                  Expected guest count
+                  <input type="number" name="guest-count" min="1" placeholder="300" required />
+                </label>
+                <label>
+                  Wedding type
+                  <select name="wedding-type" required>
+                    <option value="">Select one</option>
+                    <option value="traditional">Traditional wedding</option>
+                    <option value="white">White wedding</option>
+                    <option value="court">Court wedding</option>
+                    <option value="multi-day">Multi-day wedding</option>
+                    <option value="introduction">Introduction / engagement</option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                </label>
+                <label>
+                  Service needed
+                  <select name="service-needed" required>
+                    <option value="">Select one</option>
+                    <option value="day-of">Day-of coordination</option>
+                    <option value="full-planning">Full wedding planning</option>
+                    <option value="concierge">Bridal concierge</option>
+                    <option value="vendor">Vendor coordination</option>
+                    <option value="emergency">Emergency support</option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                Biggest planning concern
+                <textarea name="biggest-concern" rows="3" placeholder="What is currently stressing you most about your wedding?"></textarea>
+              </label>
+              <button class="button primary form-submit" type="submit">Request Consultation</button>
+              <p class="form-note" data-note role="status" aria-live="polite"></p>
+            </form>
+
+            <form class="inquiry-form" id="form-partner" data-form="partner" novalidate>
+              <div class="field-grid">
+                <label>
+                  Brand or business name
+                  <input type="text" name="business-name" placeholder="Your company name" required autocomplete="organization" />
+                </label>
+                <label>
+                  Contact person
+                  <input type="text" name="contact-person" placeholder="Full name" required autocomplete="name" />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" name="partner-email" placeholder="you@example.com" required autocomplete="email" />
+                </label>
+                <label>
+                  Phone number
+                  <input type="tel" name="partner-phone" placeholder="+234..." required autocomplete="tel" />
+                </label>
+                <label>
+                  Business category
+                  <input type="text" name="category" placeholder="Beauty, hotel, fashion, media..." required />
+                </label>
+                <label>
+                  Relationship type
+                  <select name="relationship-type" required>
+                    <option value="">Select one</option>
+                    <option value="sponsorship">Sponsorship</option>
+                    <option value="product-partnership">Product partnership</option>
+                    <option value="service-partnership">Service partnership</option>
+                    <option value="vendor">Vendor relationship</option>
+                    <option value="media">Media collaboration</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                Message
+                <textarea name="partner-message" rows="3" placeholder="Tell us how you would like to collaborate."></textarea>
+              </label>
+              <button class="button primary form-submit" type="submit">Send Partner Inquiry</button>
+              <p class="form-note" data-note role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="The Bridal Desk home">
+            <span class="brand-mark" aria-hidden="true">BD</span>
+            <span>The Bridal Desk</span>
+          </a>
+          <p>Bridal coordination and wedding-day operations for Nigerian brides.</p>
+        </div>
+        <nav class="footer-col" aria-label="Services navigation">
+          <a href="#inquiry" class="footer-cta">Book a Consultation</a>
+          <a href="#command-center">Command Center</a>
+          <a href="#services">Services</a>
+          <a href="#bridal-room">The Bridal Room</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company navigation">
+          <a href="#partners">Partner with us</a>
+          <a href="#about">About Desire Cole</a>
+          <span>Lagos &amp; Southwest Nigeria</span>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
