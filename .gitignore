@@ -1,0 +1,14 @@
+# Reference images (not for deployment)
+reference images/
+
+# Video files
+*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+*.swo
