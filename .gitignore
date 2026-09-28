@@ -1,8 +1,9 @@
 # Reference images (not for deployment)
 reference images/
 
-# Video files
+# Video files (except the ones used in the site, stored in images/)
 *.mp4
+!images/*.mp4
 
 # OS files
 .DS_Store
