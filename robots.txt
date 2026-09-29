@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thebridaldesk.com/sitemap.xml
+Sitemap: https://the-bridal-desk.vercel.app/sitemap.xml
